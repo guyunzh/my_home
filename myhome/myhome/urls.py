@@ -20,5 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('main_app.urls')),
     url(r'blog/', include('apps.blog.urls')),
+    url(r'account/', include('apps.account.urls', namespace='account', app_name='account')),
     url(r'comments/', include('apps.comments.urls')),
+    url(r'', include('password_reset.urls')),
 ]

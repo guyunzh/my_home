@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&7$k_s)p3ao4@%ss)2)9c3dj6c4yob_j*5%1+*q4bbdep(pew('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '47.95.15.109', '.guyunzh.site']
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.guyunzh.site', '47.95.15.109']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,7 +41,9 @@ INSTALLED_APPS = [
     'main_app',
     'apps.blog',
     'apps.comments',
-    'gunicorn',
+    'apps.account',
+    # 'gunicorn',
+    'password_reset',
 ]
 
 MIDDLEWARE = [
@@ -123,9 +126,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+# STATIC_ROOT = (os.path.join(BASE_DIR, 'static1'))
+
+EMAIL_HOST = 'smtp.live.com'
+EMAIL_HOST_USER = 'guyunzh@outlook.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 25
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'guyunzh@outlook.com'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

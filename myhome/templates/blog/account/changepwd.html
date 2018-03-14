@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}修改密码{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <p>请输入你的用户名和密码</p>
+    <form action="{% url 'account:changepwd' %}" class="form-horizontal" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="提交" class="btn btn-primary btn-lg">
+    </form>
+</div>
+{% endblock %}

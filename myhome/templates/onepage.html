@@ -15,13 +15,16 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    <link rel="stylesheet" href="{% static 'fonts/ionicons/css/ionicons.min.css' %}">
+{#    <link rel="stylesheet" href="{% static 'fonts/ionicons/css/ionicons.min.css' %}">#}
+    <link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/2.0.0/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
-    <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/font-awesome.min.css' %}">
+{#    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">#}
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css">
+{#    <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/font-awesome.min.css' %}">#}
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/select2.css' %}">
-    <link rel="stylesheet" href="{% static 'css/helpers.css' %}">
+{#    <link rel="stylesheet" href="{% static 'css/helpers.css' %}">#}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
   </head>
@@ -54,97 +57,7 @@
         <div class="row align-items-center">
           <div class="col-md">
             <h2 class="heading mb-2 display-4 font-light probootstrap-animate">在路上</h2>
-
-            <p class="lead mb-5 probootstrap-animate">
-
-
-            </p>
-{#              <a href="index.html" role="button" class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">Go to MultiPage Verion</a>#}
           </div>
-          <!--<div class="col-md probootstrap-animate">
-            <form action="#" class="probootstrap-form">
-              <div class="form-group">
-                <div class="row mb-3">
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="id_label_single">From</label>
-
-                      <label for="id_label_single" style="width: 100%;">
-                        <select class="js-example-basic-single js-states form-control" id="id_label_single" style="width: 100%;">
-                          <option value="Australia">Australia</option>
-                          <option value="Japan">Japan</option>
-                          <option value="United States">United States</option>
-                          <option value="Brazil">Brazil</option>
-                          <option value="China">China</option>
-                          <option value="Israel">Israel</option>
-                          <option value="Philippines">Philippines</option>
-                          <option value="Malaysia">Malaysia</option>
-                          <option value="Canada">Canada</option>
-                          <option value="Chile">Chile</option>
-                          <option value="Chile">Zimbabwe</option>
-                        </select>
-                      </label>
-
-
-                    </div>
-                  </div>
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="id_label_single2">To</label>
-                      <div class="probootstrap_select-wrap">
-                        <label for="id_label_single2" style="width: 100%;">
-                        <select class="js-example-basic-single js-states form-control" id="id_label_single2" style="width: 100%;">
-                          <option value="Australia">Australia</option>
-                          <option value="Japan">Japan</option>
-                          <option value="United States">United States</option>
-                          <option value="Brazil">Brazil</option>
-                          <option value="China">China</option>
-                          <option value="Israel">Israel</option>
-                          <option value="Philippines">Philippines</option>
-                          <option value="Malaysia">Malaysia</option>
-                          <option value="Canada">Canada</option>
-                          <option value="Chile">Chile</option>
-                          <option value="Chile">Zimbabwe</option>
-                        </select>
-                      </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END row -->
-                <!--<div class="row mb-5">
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="probootstrap-date-departure">Departure</label>
-                      <div class="probootstrap-date-wrap">
-                        <span class="icon ion-calendar"></span>
-                        <input type="text" id="probootstrap-date-departure" class="form-control" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="probootstrap-date-arrival">Arrival</label>
-                      <div class="probootstrap-date-wrap">
-                        <span class="icon ion-calendar"></span>
-                        <input type="text" id="probootstrap-date-arrival" class="form-control" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END row --><!--
-                <div class="row">
-                  <div class="col-md">
-                    <label for="round" class="mr-5"><input type="radio" id="round" name="direction">  Round</label>
-                    <label for="oneway"><input type="radio" id="oneway" name="direction">  Oneway</label>
-                  </div>
-                  <div class="col-md">
-                    <input type="submit" value="Submit" class="btn btn-primary btn-block">
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>-->
         </div>
       </div>
 
@@ -157,14 +70,14 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-12 text-center mb-5 probootstrap-animate">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">选择比努力更重要</h2>
+            <h2 class="display-4 border-bottom probootstrap-section-heading">选择&努力</h2>
             <blockquote class="">
               <p class="lead mb-4"><em>人生困难重重，在漫长而艰辛的前行路上，坚持不懈、脚踏实地的“低头拉车”固然重要。但认清形势、找准目标的“抬头看路”也很关键，甚至决定着你能否达到成功彼岸。只寻求远方的梦想，而不付出当下的努力，那是迷梦；只知道埋头苦干，而不认清方向，那是徒劳。</em></p>
               <p class="probootstrap-author">
                 <a href="#" target="_blank">
                   <img src="{% static 'images/person_1.jpg' %}" alt="Free Template by ProBootstrap.com" class="rounded-circle">
                   <span class="probootstrap-name">赵航</span>
-                  <span class="probootstrap-title">the future CTO</span>
+{#                  <span class="probootstrap-title">the future CTO</span>#}
                 </a>
               </p>
             </blockquote>
@@ -412,7 +325,7 @@
                 <a href="#" target="_blank">
                   <img src="{% static 'images/person_1.jpg' %}" alt="Free Template by ProBootstrap.com" class="rounded-circle">
                   <span class="probootstrap-name">赵航</span>
-                  <span class="probootstrap-title">maybe the future CTO</span>
+{#                  <span class="probootstrap-title">maybe the future CTO</span>#}
                 </a>
               </p>
             </blockquote>
@@ -423,125 +336,6 @@
       </div>
     </section>
     <!-- END section -->
-
-
-    <!-- <section class="probootstrap_section">
-      <div class="container">
-        <div class="row text-center mb-5 probootstrap-animate">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Travel With Us</h2>
-          </div>
-        </div>
-
-        <div class="row probootstrap-animate">
-          <div class="col-md-12">
-            <div class="owl-carousel js-owl-carousel-2">
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_2.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_1.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_3.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_4.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_5.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_2.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_1.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_3.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_4.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="media probootstrap-media d-block align-items-stretch mb-4 probootstrap-animate">
-                  <img src="{% static 'images/sq_img_5.jpg' %}" alt="Free Template by ProBootstrap" class="img-fluid">
-                  <div class="media-body">
-                    <h5 class="mb-3">02. Service Title Here</h5>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="probootstrap_section bg-light" id="section-contact">
       <div class="container">
@@ -580,30 +374,30 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6  probootstrap-animate">
+          <div class="col-md-6  probootstrap-animate " id="lianxi">
             <form action="{% url 'main_app:contact' %}" method="post" class="probootstrap-form probootstrap-form-box mb60">
                 {% csrf_token %}
               <div class="row mb-3">
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="name" class="sr-only sr-only-focusable">你的姓名</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="姓名">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="姓名" value="{{ user.username }}">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="telephone" class="sr-only sr-only-focusable">电话号码</label>
-                    <input type="text" class="form-control" id="telephone" name="telephone" placeholder="电话">
+                    <input type="text" class="form-control" id="telephone" name="telephone" placeholder="电话" value="{{ user.telephone }}">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="email" class="sr-only sr-only-focusable">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="邮箱">
+                <input type="email" class="form-control" id="email" name="email" placeholder="邮箱" value="{{ user.email }}">
               </div>
               <div class="form-group">
                 <label for="qq/wechat" class="sr-only sr-only-focusable">QQ/WeChat</label>
-                <input type="text" class="form-control" id="qq/wechat" name="qq/wechat" placeholder="QQ/微信">
+                <input type="text" class="form-control" id="qq/wechat" name="qq/wechat" placeholder="QQ/微信" value="{{ user.qq }}">
               </div>
               <div class="form-group">
                 <label for="message" class="sr-only sr-only-focusable">Message</label>
@@ -629,10 +423,12 @@
     </footer>
 
     
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    
+{#    <script src="{% static 'js/jquery.min.js' %}"></script>#}
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="{% static 'js/popper.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{#    <script src="{% static 'js/bootstrap.min.js' %}"></script>#}
+    <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
     
     <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>

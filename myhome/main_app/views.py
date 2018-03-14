@@ -9,7 +9,7 @@ def contact(request):
     if request.method == 'POST':
         message = MessageModel(
             name=request.POST.get('name'),
-            telephone=int(request.POST.get('telephone')),
+            telephone=request.POST.get('telephone'),
             email=request.POST.get('email'),
             qq=request.POST.get('qq/wechat'),
             content=request.POST.get('message'),

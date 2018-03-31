@@ -12,6 +12,6 @@ class UserInfo(User):
     photo = models.ImageField(blank=True)
 
     def __str__(self):
-        return 'user:{}' .format(self.user.username)
+        return 'user:{}' .format(self.username)
 
 
